@@ -13,6 +13,12 @@ const Navbar = () => {
       <li>
         <NavLink to="/contact">Contact</NavLink>
       </li>
+      <li>
+        <NavLink to="/Personnel">Personnel</NavLink>
+      </li>
+      <li>
+        <NavLink to="/PersonnelDetail">PersonnelDetail</NavLink>
+      </li>
     </ul>
   );
 };

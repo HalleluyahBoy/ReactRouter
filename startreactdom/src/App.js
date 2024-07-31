@@ -7,6 +7,7 @@ import NotFound from "./pages/NotFound";
 import Personnel from "./pages/Personnel";
 import PersonnelDetail from "./pages/PersonnelDetail";
 import Footer from "./components/Footer";
+import Courses from "./components/Courses";
 import { BrowserRouter, Routes, Route } from "react-router-dom"; // this is for routing without reloading the page
 const App = () => {
   return (
@@ -18,6 +19,8 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/Personnel" element={<Personnel />} />
         <Route path="/Personnel/:id" element={<PersonnelDetail />} />
+        {/* courses */}
+        <Route path="/courses" element={<Courses />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
