@@ -1,9 +1,9 @@
 import React from "react";
 import { useState } from "react";
 const Contact = () => {
-  const { firstName, setFirstName } = useState("");
-  const { lastName, setLastName } = useState("");
-  const { email, setemail } = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setemail] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
     const message = `Name ${firstName}\n Last Name ${lastName}\n Email ${email}`;
@@ -33,7 +33,7 @@ const Contact = () => {
         </div>
 
         <div className="infoWrapper">
-          <label htmlFor="firstName">Email: </label>
+          <label htmlFor="email">Email: </label>
           <input
             type="text"
             id="email"
